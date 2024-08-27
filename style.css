@@ -239,6 +239,7 @@ footer a{
         font-size: 1.2rem;
         /* Further reduce font size */
         padding: 5px 0;
+
     }
        
 }
@@ -258,7 +259,12 @@ footer a{
         border: 0;
         /* Adjust the border if necessary */
     }
-
+    header nav ul{
+        list-style-type: none;
+        }
+    header nav ul li::marker{
+    content: none;
+}
     
     #home,
     #about,
@@ -293,7 +299,18 @@ footer a{
     }
     
 }
-@media (max-width: 1000px){
+
+@media (max-width: 920px){
+    #box2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#skills,
+#lang,
+#edu{
+    width: 100%;
+}
 .pro {
     display: flex;
     flex-direction: column;
@@ -304,16 +321,6 @@ footer a{
 .project-card {
     width: 80%;
 }
-
-}
-
-@media (max-width: 920px){
-    #box2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
 
 #contact form {
     box-shadow: 2px 3px 9px rgb(71, 61, 61);
