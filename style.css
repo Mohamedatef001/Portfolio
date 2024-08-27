@@ -294,26 +294,26 @@ footer a{
     }
     
 }
-@media (max-width: 1000px){
-    .pro{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-    .project-card {
-            width:80%;
-        }
-        #contact form{
-    box-shadow: 2px 3px 9px rgb(71, 61, 61);
-        }
 
-}
 @media (max-width: 920px){
     #box2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+.pro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-card {
+    width: 80%;
+}
+
+#contact form {
+    box-shadow: 2px 3px 9px rgb(71, 61, 61);
 }
 }
 /* --------------------------------------------------------------------------- */
