@@ -239,6 +239,7 @@ footer a{
         font-size: 1.2rem;
         /* Further reduce font size */
         padding: 5px 0;
+
     }
        
 }
@@ -250,7 +251,6 @@ footer a{
             grid-template-rows: auto;
             /* Auto height for rows */
             margin: 0px;
-            width: 100%;
         }
 
     header {
@@ -259,7 +259,12 @@ footer a{
         border: 0;
         /* Adjust the border if necessary */
     }
-
+    header nav ul{
+        list-style-type: none;
+        }
+    header nav ul li::marker{
+    content: none;
+}
     
     #home,
     #about,
@@ -300,6 +305,11 @@ footer a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+#skills,
+#lang,
+#edu{
+    width: 100%;
 }
 .pro {
     display: flex;
