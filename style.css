@@ -250,7 +250,6 @@ footer a{
             grid-template-rows: auto;
             /* Auto height for rows */
             margin: 0px;
-            width: 100%;
         }
 
     header {
@@ -294,13 +293,7 @@ footer a{
     }
     
 }
-
-@media (max-width: 920px){
-    #box2 {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
+@media (max-width: 1000px){
 .pro {
     display: flex;
     flex-direction: column;
@@ -309,8 +302,18 @@ footer a{
 }
 
 .project-card {
-    width: 55%;
+    width: 80%;
 }
+
+}
+
+@media (max-width: 920px){
+    #box2 {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 
 #contact form {
     box-shadow: 2px 3px 9px rgb(71, 61, 61);
