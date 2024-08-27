@@ -72,7 +72,9 @@ header nav ul li a:hover{
     /* box-shadow: 2px 3px 9px rgb(71, 61, 61); */
     /* border-radius: 10px; */
 }
-
+#home h1{
+    text-shadow: 2px 3px 6px rgb(120, 239, 219);
+}
 #about{
     /* border: 5px solid black; */
     grid-area: 3/1/3/4;
@@ -238,16 +240,18 @@ footer a{
         /* Further reduce font size */
         padding: 5px 0;
     }
+       
 }
 /* Responsive adjustments for smaller screens (e.g., mobile) */
 @media (max-width: 950px) {
     body {
-        grid-template-columns: 1fr;
-        /* Single column layout */
-        grid-template-rows: auto;
-        /* Auto height for rows */
-        margin: 0px;
-    }
+            grid-template-columns: 1fr;
+            /* Single column layout */
+            grid-template-rows: auto;
+            /* Auto height for rows */
+            margin: 0px;
+            width: 100%;
+        }
 
     header {
         grid-area: auto;
@@ -290,7 +294,7 @@ footer a{
     }
     
 }
-@media (max-width: 920px){
+@media (max-width: 1400px){
     .pro{
         display: flex;
         flex-direction: column;
@@ -303,7 +307,10 @@ footer a{
         #contact form{
     box-shadow: 2px 3px 9px rgb(71, 61, 61);
         }
-#box2 {
+
+}
+@media (max-width: 920px){
+    #box2 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -326,61 +333,62 @@ footer a{
     transform: scale(10) rotate(45deg) ;
 }
 .back2 {
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     background-color: rgb(97, 82, 82);
     opacity: 0.3;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 5vw;
     position: absolute;
     animation-name: move;
-    animation-duration: 30s;
+    animation-duration: 10s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
 
 @keyframes move {
     0% {
-        transform: translate(0, 0) scale(1) rotate(0deg);
-        border-radius: 5px;
+        transform: translate(0, 0) scale(1) rotate(30deg);
+        border-radius: 5vw;
         background-color: rgb(97, 82, 82);
     }
 
     25% {
-        transform: translate(150px, -50px) scale(1.5) rotate(45deg);
+        transform: translate(15vw, -5vh) scale(1.5) rotate(45deg);
         border-radius: 50%;
         background-color: rgb(67, 62, 62);
     }
 
     50% {
-        transform: translate(-100px, 200px) scale(1.2) rotate(90deg);
-        border-radius: 20px;
+        transform: translate(-10vw, 20vh) scale(1.2) rotate(90deg);
+        border-radius: 20vw;
         background-color: rgb(117, 102, 102);
     }
 
     75% {
-        transform: translate(200px, -150px) scale(0.8) rotate(135deg);
-        border-radius: 25%;
+        transform: translate(20vw, -15vh) scale(0.8) rotate(135deg);
+        border-radius: 25vw;
         background-color: rgb(127, 112, 112);
     }
 
     100% {
-        transform: translate(0, 0) scale(1) rotate(360deg);
-        border-radius: 5px;
+        transform: translate(0, 0) scale(1) rotate(30deg);
+        border-radius: 5vw;
         background-color: rgb(97, 82, 82);
     }
 }
+
 .back3 {
-    width: 100px;
-    height: 100px;
+    width: 10vw;
+    height: 10vw;
     background-color: rgb(82, 97, 82);
     opacity: 0.3;
     z-index: -1;
-    border-radius: 5px;
+    border-radius: 5vw;
     position: absolute;
     right: 0;
     animation-name: floatRight;
-    animation-duration: 25s;
+    animation-duration: 30s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
 }
@@ -388,37 +396,182 @@ footer a{
 @keyframes floatRight {
     0% {
         transform: translate(0, 0) scale(1) rotate(0deg);
-        border-radius: 5px;
+        border-radius: 5vw;
         background-color: rgb(82, 97, 82);
     }
 
     20% {
-        transform: translate(-100px, -50px) scale(1.3) rotate(30deg);
-        border-radius: 20px;
+        transform: translate(-10vw, -5vh) scale(1.3) rotate(30deg);
+        border-radius: 20vw;
         background-color: rgb(62, 97, 82);
     }
 
     40% {
-        transform: translate(-200px, 100px) scale(1.5) rotate(60deg);
-        border-radius: 50%;
+        transform: translate(-20vw, 10vh) scale(1.5) rotate(60deg);
+        border-radius: 50vw;
         background-color: rgb(82, 117, 82);
     }
 
     60% {
-        transform: translate(-150px, 200px) scale(0.9) rotate(90deg);
-        border-radius: 35%;
+        transform: translate(-15vw, 20vh) scale(0.9) rotate(90deg);
+        border-radius: 35vw;
         background-color: rgb(82, 127, 92);
     }
 
     80% {
-        transform: translate(-250px, -150px) scale(1.2) rotate(120deg);
-        border-radius: 15%;
+        transform: translate(-25vw, -15vh) scale(1.2) rotate(120deg);
+        border-radius: 15vw;
         background-color: rgb(92, 107, 102);
     }
 
     100% {
         transform: translate(0, 0) scale(1) rotate(180deg);
-        border-radius: 5px;
+        border-radius: 5vw;
         background-color: rgb(82, 97, 82);
+    }
+}
+
+.back4 {
+    width: 8vw;
+    height: 8vw;
+    background-color: rgb(82, 82, 97);
+    opacity: 0.2;
+    z-index: -1;
+    border-radius: 10vw;
+    position: absolute;
+    left: 5vw;
+    top: 5vh;
+    animation-name: diagonalMove;
+    animation-duration: 30s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes diagonalMove {
+    0% {
+        transform: translate(0, 0) scale(1);
+        border-radius: 10vw;
+        background-color: rgb(82, 82, 97);
+    }
+
+    25% {
+        transform: translate(15vw, 15vh) scale(1.2);
+        border-radius: 30vw;
+        background-color: rgb(62, 62, 117);
+    }
+
+    50% {
+        transform: translate(30vw, 30vh) scale(0.9);
+        border-radius: 20vw;
+        background-color: rgb(102, 102, 137);
+    }
+
+    75% {
+        transform: translate(45vw, 15vh) scale(1.5);
+        border-radius: 50vw;
+        background-color: rgb(72, 72, 97);
+    }
+
+    100% {
+        transform: translate(0, 0) scale(1);
+        border-radius: 10vw;
+        background-color: rgb(82, 82, 97);
+    }
+}
+
+.back5 {
+    width: 6vw;
+    height: 6vw;
+    background-color: rgb(97, 97, 82);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 50vw;
+    position: absolute;
+    left: 90vw;
+    top: 30vh;
+    animation-name: orbit;
+    animation-duration: 35s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes orbit {
+    0% {
+        transform: rotate(0deg) translateX(15vw) rotate(0deg);
+        background-color: rgb(97, 97, 82);
+    }
+
+    25% {
+        transform: rotate(90deg) translateX(15vw) rotate(-90deg);
+        background-color: rgb(107, 107, 92);
+    }
+
+    50% {
+        transform: rotate(180deg) translateX(15vw) rotate(-180deg);
+        background-color: rgb(117, 117, 102);
+    }
+
+    75% {
+        transform: rotate(270deg) translateX(15vw) rotate(-270deg);
+        background-color: rgb(127, 127, 112);
+    }
+
+    100% {
+        transform: rotate(360deg) translateX(15vw) rotate(-360deg);
+        background-color: rgb(97, 97, 82);
+    }
+}
+
+.back6 {
+    width: 9vw;
+    height: 9vw;
+    background-color: rgb(82, 97, 122);
+    opacity: 0.3;
+    z-index: -1;
+    border-radius: 15vw;
+    position: absolute;
+    left: 10vw;
+    bottom: 10vh;
+    animation-name: waveMotion;
+    animation-duration: 18s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes waveMotion {
+    0% {
+        transform: translateX(0) scale(1) rotate(0deg);
+        border-radius: 15vw;
+        background-color: rgb(82, 97, 122);
+    }
+
+    20% {
+        transform: translateX(50px) translateY(-30px) scale(1.1) rotate(20deg);
+        border-radius: 25%;
+        background-color: rgb(102, 117, 142);
+    }
+
+    40% {
+        transform: translateX(100px) translateY(30px) scale(1.3) rotate(40deg);
+        border-radius: 50%;
+        background-color: rgb(72, 92, 112);
+    }
+
+    60% {
+        transform: translateX(150px) translateY(-20px) scale(0.9) rotate(60deg);
+        border-radius: 35%;
+        background-color: rgb(122, 137, 157);
+    }
+
+    80% {
+        transform: translateX(200px) translateY(20px) scale(1.2) rotate(80deg);
+        border-radius: 45%;
+        background-color: rgb(82, 107, 132);
+    }
+
+    100% {
+        transform: translateX(0) translateY(0) scale(1) rotate(100deg);
+        border-radius: 15px;
+        background-color: rgb(82, 97, 122);
     }
 }
