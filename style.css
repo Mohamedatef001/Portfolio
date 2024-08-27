@@ -294,7 +294,7 @@ footer a{
     }
     
 }
-@media (max-width: 1400px){
+@media (max-width: 1000px){
     .pro{
         display: flex;
         flex-direction: column;
