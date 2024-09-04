@@ -570,3 +570,69 @@ footer a{
         background-color: rgb(82, 97, 122);
     }
 }
+
+/* ------------------------------------------------------------------------------ */
+
+ .contact{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+ }
+ .cont{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding-right: 50px;
+    transition: transform 0.5s ease , box-shadow 0.5s ease;
+ }
+.cont li::marker{
+    content: none;
+}
+
+.contact a:hover {
+    box-shadow: 0px 0px 6px 3px #6986a3;
+    transform: scale(1.02);
+}
+
+.fa {
+    padding: 15px;
+    font-size: 30px;
+    width: 60px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+}
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+    font-size: 30px;
+}
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+    font-size: 30px;
+
+}
+
+.fa-linkedin {
+    background: #007bb5;
+    color: white;
+    font-size: 30px;
+
+}
+
+.fa-instagram {
+    background: #125688;
+    color: white;
+    font-size: 30px;
+
+}
+
