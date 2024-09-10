@@ -31,9 +31,10 @@
     <section id="about">
         <div id="box1">
             <h2>About Me</h2>
-            <p>I'm a dedicated front-end developer with a strong foundation in HTML, CSS, and Basic JavaScript. I'm passionate about creating
-            visually appealing and user-friendly websites.<br><br>
-            Let's bring your digital vision to life!</p>
+            <p>I'm a dedicated front-end developer with a strong foundation in HTML, CSS, and Basic JavaScript. I'm
+                passionate about creating
+                visually appealing and user-friendly websites.<br><br>
+                Let's bring your digital vision to life!</p>
         </div>
         <div class="back2"></div>
         <hr>
@@ -52,7 +53,8 @@
                 <h3>Education</h3>
                 <p>Front-End Web Developer Nanodegree, Udacity<br><span>Jul. 2022- Oct. 2022</span></p>
                 <hr>
-                <p>Bachelor of Engineering, Alexandria Institute of Engineering and Technology<br><span>Jun. 2020 – Nov. 2024</span></p>
+                <p>Bachelor of Engineering, Alexandria Institute of Engineering and Technology<br><span>Jun. 2020 – Nov.
+                        2024</span></p>
 
             </div>
             <div class="box" id="lang">
@@ -74,23 +76,34 @@
             <div class="project-card">
                 <img src="images/landing page2.png" alt="Project Image">
                 <h3>Landing Page</h3>
-                <p>This is a basic landing page that uses Javascript to create a NavBar dynamically and to highlight sections when
+                <p>This is a basic landing page that uses Javascript to create a NavBar dynamically and to highlight
+                    sections when
                     scrolled, and add active class to the links in the NavBar when clicked.</p>
                 <a target="_blank" href="https://mohamedatef001.github.io/landing-page/">View Project</a>
             </div>
             <div class="project-card">
                 <img src="images/pass.png" alt="Project Image">
                 <h3>Password Generator</h3>
-                <p>This is a simple password generator that consists of 12 characters includes also symbols and numbers.</p>
+                <p>This is a simple password generator that consists of 12 characters includes also symbols and numbers.
+                </p>
                 <a target="_blank" href="https://mohamedatef001.github.io/landing-page/">View Project</a>
             </div>
             <div class="project-card">
                 <img src="images/stop.png" alt="Project Image">
                 <h3>Stop Watch</h3>
-                <p>This is a Stop Watch that start a time from the millisecond until hours and you can pause it and continue and you can reset it from the beginning using the reset button.</p>
+                <p>This is a Stop Watch that start a time from the millisecond until hours and you can pause it and
+                    continue and you can reset it from the beginning using the reset button.</p>
                 <a target="_blank" href="https://mohamedatef001.github.io/Stop_watch/">View Project</a>
             </div>
-        </div>  
+            <div class="project-card">
+                <img src="images/Screenshot from 2024-09-10 23-21-15.png" alt="Project Image">
+                <h3>Basic Calculator</h3>
+                <p>This is a Basic Calculator that do some basic calculations like Addition, Subtraction, Division and
+                    Multiplication.</p>
+                <a target="_blank" href="https://mohamedatef001.github.io/Calculator/">View Project</a>
+            </div>
+
+        </div>
         <a href="#head" style="float: right;padding-right: 70px;" title="above">
             <img src="images/icons8-up-arrow-48.png">
         </a>
@@ -99,16 +112,18 @@
     <section id="contact">
         <h2>Contact Me</h2>
         <form id="contact-form">
-            <input id="imp"  type="text" name="name" placeholder="Name" required>
-            <input  type="email" name="email" placeholder="Email" required>
+            <input id="imp" type="text" name="name" placeholder="Name" required>
+            <input type="email" name="email" placeholder="Email" required>
             <textarea name="message" placeholder="Your Message" style="resize: none;width: 228px;height: 100px;"
                 required></textarea>
             <button id="sub" type="submit">Send</button>
         </form>
         <div id="6" class="contact">
             <ul class="cont">
-                <li><a href="https://www.facebook.com/mohamed.fekry.50767984/" class="fa fa-facebook   " target="_blank"></a>
-                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=www.linkedin.com/in/mohamed-atef-0315a9242" class="fa fa-linkedin  " target="_blank"></a>
+                <li><a href="https://www.facebook.com/mohamed.fekry.50767984/" class="fa fa-facebook   "
+                        target="_blank"></a>
+                <li><a href="https://www.linkedin.com/sharing/share-offsite/?url=www.linkedin.com/in/mohamed-atef-0315a9242"
+                        class="fa fa-linkedin  " target="_blank"></a>
                 <li><a href="https://www.instagram.com/mohamed.atef001/" class="fa fa-instagram  " target="_blank"></a>
             </ul>
         </div>
@@ -126,11 +141,11 @@
     <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <script type="text/javascript">
         (function () {
-            emailjs.init("Rz1r4B3bpP9B_4FDq"); 
+            emailjs.init("Rz1r4B3bpP9B_4FDq");
         })();
 
         document.getElementById('contact-form').addEventListener('submit', function (event) {
-            event.preventDefault(); 
+            event.preventDefault();
 
             emailjs.sendForm('service_qq3abqz', 'template_ijinpam', this)
                 .then(function () {
